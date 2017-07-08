@@ -1,16 +1,22 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
+import { FormsModule }   from '@angular/forms';
+import { AppComponent }   from './app.component';
+import { TaskListComponent } from './task-list.component';
+import { EditTaskComponent } from './edit-task.component';
+import { NewMealComponent } from './new-meal.component';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    TaskListComponent,
+    EditTaskComponent,
+    NewMealComponent,
+  ],
+  bootstrap:    [ AppComponent ]
 })
+
 export class AppModule { }
